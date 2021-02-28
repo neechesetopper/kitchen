@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ganjam Kitchen</title>
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet"href="fontawesome/fonts/css/all.css">
+	<style>
+		body
+		{
+			margin: 0px;
+			background-image:url("IMAGES/mainimg.jpg");
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		#main-header:hover
+		{
+			background-color:#8F4C23;
+		}
+		#main-header
+		{
+			background-color:rgba(0,0,0,0.5);
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+		}
+		#main-header h2
+		{
+			color: white;
+			font-size: 20px;
+		}
+		#main-nav
+		{
+			position: relative;
+		}
+		#main-nav a
+		{
+			width: 120px;
+			margin: 5px;
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+			border-radius: 5px;
+
+		}
+		#main-nav a:hover
+		{
+			box-shadow: 0px 0px 10px white;
+			background-color: orange;
+			color: white;
+		}
+		.active
+		{
+			background-color: orange;
+			box-shadow: 0 0 10px white;
+			color:black;
+		}
+		#main-body-wrapper
+		{
+			background-color: rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 548px;
+			
+		}
+
+
+		#main-body
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 500px;
+			position: relative;
+			
+		}
+		#main-body h2 span
+		{
+			margin: 10px;
+			font-size: 50px;
+			cursor: pointer;
+			color:white; 
+		}
+		 #main-body h2 #span1:hover
+		{
+			text-decoration:underline; 
+			/*background-image: url("IMAGES/span1st.jpg");
+			position: absolute;
+			margin-left: 0px;
+			width:500px;
+			height:500px;
+			z-index: 2;
+			padding: 100%;
+			margin-top: 0px;
+			
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;*/
+			
+			display: inline-block;
+  				margin: 0 0.5rem;
+				animation:hinge; 
+  				animation-duration: 2s;
+
+		}
+		#main-body h2 #span2:hover
+		{
+			text-decoration: underline;
+			display: inline-block;
+  				margin: 0 0.5rem;
+				animation:hinge; 
+  				animation-duration: 2s;
+
+  		}
+  		#main-body h2 #span3:hover
+  		{
+		 text-decoration: underline;
+			display: inline-block;
+  				margin: 0 0.5rem;
+				animation:hinge; 
+  				animation-duration: 2s; 			
+  		}
+		
+		
+		.fa
+		{
+        	
+		}
+		/*@keyframes bounce
+		{
+			100%
+			{
+				animation: bounce;
+			}
+		}*/
+
+	</style>
+</head>
+<body>
+	
+	<!--Main Header-->
+	<header id="main-header">
+		<h2 class="animate__animated animate__flip"><span style="font-size: 30px;">GANJAM</span>
+			<span style="font-size: 30px;">KITCHEN</span>
+			 </h2>
+		<!--Main Nav-->
+		<nav id="main-nav">
+			<a href="https://zoma.to/r/19576412" ><i class="fas fa-shopping-cart"></i>ORDER NOW</a>
+			<a href="index.html" class="active"><i class="fas fa-home"></i>HOME</a>
+			<a href="gallery.html" ><i class="fas fa-camera-retro"></i>GALLERY</a>
+			<a href="contact.html"><i class="fas fa-id-card-alt"></i>CONTACT</a>
+			<a href="about.html"><i class="fas fa-address-card"></i>ABOUT</a>
+			<a href="offers.html"><i class="fas fa-percentage"></i>OFFERS</a>
+		</nav>
+	</header>
+	<!--Main Body-->
+	<div id="main-body-wrapper">
+	<div id="main-body">
+		<h2><span id="span1">EAT</span>
+			<span id="span2">DRINK</span>
+			<span id="span3">VISIT</span></h2>
+	</div>
+	</div>
+
+</body>
+</html>

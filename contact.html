@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContactUs</title>
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet"href="fontawesome/fonts/css/all.css">
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+		#main-header:hover
+		{
+			background-color:#8F4C23;
+		}
+		#main-header
+		{
+			background-color:rgba(0,0,0,0.5);
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+		}
+		#main-header h2
+		{
+			color: white;
+			font-size: 20px;
+		}
+		#main-nav
+		{
+			position: relative;
+		}
+		#main-nav a
+		{
+			width: 120px;
+			margin: 5px;
+			display: inline-block;
+			text-align: center;
+			text-decoration: none;
+			padding: 10px;
+			color: white;
+			border-radius: 5px;
+
+		}
+		#main-nav a:hover
+		{
+			box-shadow: 0px 0px 10px white;
+			background-color: orange;
+			color: white;
+		}
+		.active
+		{
+			background-color: orange;
+			box-shadow: 0 0 10px white;
+			color:black;
+		}
+		#main-body
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top:100px; 
+			border:4px solid black;
+		}
+		#main-body .content
+		{
+			margin-bottom: 50px; 
+		}
+		.cont
+		{
+			font-size: 23px;
+			border: 30px;
+			padding: 10px;
+			border:none;
+			outline: none;
+			background: none;
+			border-bottom: 2px solid #939393;
+			border-radius: 1px;
+		}
+		::placeholder
+		{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<!--Main Header-->
+	<header id="main-header">
+		<h2 class="animate__animated animate__flip"><span style="font-size: 30px;">GANJAM</span>
+			<span style="font-size: 30px;">KITCHEN</span>
+			 </h2>
+		<!--Main Nav-->
+		<nav id="main-nav">
+			<a href="https://zoma.to/r/19576412" ><i class="fas fa-shopping-cart"></i>ORDER NOW</a>
+			<a href="index.html" class=""><i class="fas fa-home"></i>HOME</a>
+			<a href="gallery.html" ><i class="fas fa-camera-retro"></i>GALLERY</a>
+			<a href="contact.html" class="active" ><i class="fas fa-id-card-alt"></i>CONTACT</a>
+			<a href="about.html"><i class="fas fa-address-card"></i>ABOUT</a>
+			<a href="offers.html"><i class="fas fa-percentage"></i>OFFERS</a>
+		</nav>
+	</header>
+	<!--Main-Body-->
+	<div id="main-body">
+		<h1 class="content">Want to talk with us?</h1>
+		<form class="content">
+			<div><input type="text" placeholder="Enter your Name" class="cont"></div>
+			<div><input type="email" placeholder="Enter your email" class="cont"></div>
+			<div><textarea cols="22" rows="5" placeholder="Tell us your query" class="cont"></textarea> </div>
+			<div align="center" colspan="2" ><button >SUBMIT</button></div>
+		</form>
+	</div>
+</body>
+</html>
